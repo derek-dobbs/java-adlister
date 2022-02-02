@@ -19,5 +19,7 @@ public class HelloWorldServlet extends HttpServlet {
 
 
 //        Make the page say "Hello, <name>!" if name is passed as part of the query string (e.g. /hello?name=codeup), otherwise default to "Hello, World!".
+        String name = req.getParameter("name");
+        out.println("<h1>Hello " + name + " !</h1>");
     }//end doGet
 }//end HelloWorldServlet
