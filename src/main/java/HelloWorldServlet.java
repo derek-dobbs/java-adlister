@@ -15,11 +15,18 @@ public class HelloWorldServlet extends HttpServlet {
         res.setContentType("text/html");
 
         PrintWriter out = res.getWriter();
-        out.println("<h1>Hello World!</h1>");
-
+//        out.println("<h1>Hello World!</h1>");
 
 //        Make the page say "Hello, <name>!" if name is passed as part of the query string (e.g. /hello?name=codeup), otherwise default to "Hello, World!".
+//        String name = req.getParameter("name");
+//        out.println("<h1>Hello " + name + " !</h1>");
+
         String name = req.getParameter("name");
-        out.println("<h1>Hello " + name + " !</h1>");
+
+        if(name != null) {
+            out.println("<h1>Hello " + name + " !</h1>");
+        }else {
+            out.println("<h1>Hello World!</h1>");
+        }
     }//end doGet
 }//end HelloWorldServlet
