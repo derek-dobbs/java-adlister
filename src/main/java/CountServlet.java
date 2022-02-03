@@ -32,11 +32,18 @@ public class CountServlet extends HttpServlet {
 //            out.println("<h1>Hello World!</h1>");
 //        }
 
-        out.println("Number of page views: " + counter);
+
 
 //      Create a page that displays a number that goes up by one every time the /count page is viewed.
 //      BONUS: Allow the user to pass a parameter in the query string to reset the counter.
+        String reset = req.getParameter("reset");
 
+        if(reset == null) {
+            out.println("Number of page views: " + counter);
+        }else {
+            counter = 0;
+            out.println("Number of page views: " + counter);
+        }
 
     }//end doGet
 }//end HelloWorldServlet
