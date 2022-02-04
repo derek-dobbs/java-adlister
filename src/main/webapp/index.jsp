@@ -9,25 +9,28 @@
     <%@include file="partials/navbar.jsp"%>
 
     <c:if test="true">
-        <p style="color: red">Please login to continue.</p>
+        <p style="text-align: center; color: red">Please login to continue.</p>
     </c:if>
     <c:if test="false">
         <h1>Page Error</h1>
     </c:if>
 
-    <%--Login Form--%>
-    <form method="POST" action="login.jsp">
-        <label for="username">Username</label>
-        <input id="username" name="username" type="text">
-        <br>
+    <div class="container">
+        <%--Login Form--%>
+        <form method="POST" action="login.jsp">
+            <label for="username">Username</label>
+            <input id="username" class="form-control" name="username" type="text">
+            <br>
 
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password">
-        <br>
+            <label for="password">Password</label>
+            <input id="password" class="form-control" name="password" type="password">
+            <br>
 
-        <input type="submit">
-    </form>
-    <%--End Login Form--%>
+            <input type="submit">
+        </form>
+        <%--End Login Form--%>
+    </div>
+
 
     <%@include file="partials/footer.jsp"%>
 

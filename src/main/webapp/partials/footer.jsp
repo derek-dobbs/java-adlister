@@ -1,10 +1,14 @@
-<footer>
+<div style="margin: auto" class="container d-flex justify-content-between">
     <hr>
-    <p style="text-align: center">Created By: Derek Dobbs</p>
+    <p>Created By: Derek Dobbs</p>
 
-    <i class="fab fa-github"></i>
-    <a href="https://github.com/derek-dobbs">Github</a>
+    <p style="margin-left: 1em">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/derek-dobbs">@DerekDobbs</a>
+    </p>
 
-    <i class="fab fa-linkedin"></i>
-    <a href="https://www.linkedin.com/in/derekdobbs/">Linkedin</a>
-</footer>
+    <p style="margin-left: 1em">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/derekdobbs/">@DerekDobbs</a>
+    </p>
+</div>
