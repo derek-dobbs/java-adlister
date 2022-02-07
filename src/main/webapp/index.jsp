@@ -9,7 +9,14 @@
 <body>
     <jsp:include page="partials/navbar.jsp" />
     <div class="container">
-        <h1>Welcome to the Adlister!</h1>
+        <h1>List of albums:</h1>
+        <c:forEach var="album" items="${albums}">
+            <div class="album">
+                <h2>${album.name}</h2>
+                <h4>By: ${album.artist}</h4>
+                <p>Year: ${album.releaseDate}; Sales in millions: ${album.sales}</p>
+            </div>
+        </c:forEach>
     </div>
 </body>
 </html>
