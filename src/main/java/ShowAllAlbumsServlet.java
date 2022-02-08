@@ -15,4 +15,4 @@ public class ShowAllAlbumsServlet extends HttpServlet {
         request.setAttribute("albums", albums);
         request.getRequestDispatcher("/albums/index.jsp").forward(request, response);
     }
-}''
+}

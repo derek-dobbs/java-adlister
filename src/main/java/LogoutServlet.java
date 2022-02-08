@@ -5,14 +5,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "IncorrectServlet", urlPatterns = "/incorrect")
-public class IncorrectServlet extends HttpServlet {
+@WebServlet(name = "LogoutServlet", urlPatterns = "/logout")
+public class LogoutServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        request.getSession().invalidate();
+        response.sendRedirect("/login");
+    }//end doGet
 
-    }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-
-    }
-
-}
+    }//end doPost
+}//end class
