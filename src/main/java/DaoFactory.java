@@ -1,9 +1,12 @@
 public class DaoFactory {
-    private static Albums albumsDao;
-    public static Albums getAlbumsDao() {
-        if(albumsDao == null) {
-            albumsDao = new StaticAlbumsDao();
+    private static Ads adsDao;
+
+    public static Ads getAdsDao() {
+        if(adsDao == null) {
+            adsDao = new ListAdsDao();
         }
-        return albumsDao;
+        return adsDao;
     }
+
+
 }
