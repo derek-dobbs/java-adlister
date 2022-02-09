@@ -14,8 +14,8 @@ public class ProfileServlet extends HttpServlet {
             response.sendRedirect("/login");
             return;
         }
-        request.setAttribute("username", request.getSession().getAttribute("user"));
-        request.getRequestDispatcher("/WEB-INF/profile.jsp").forward(request, response);
+//        request.setAttribute("username", request.getSession().getAttribute("user"));
+        request.getRequestDispatcher("/profile.jsp").forward(request, response);
     }//end doGet
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {

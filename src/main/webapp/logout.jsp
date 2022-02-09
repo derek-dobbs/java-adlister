@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
   <body>
-
+  <p>You have successfully logged out.</p>
 </body>
 </html>
