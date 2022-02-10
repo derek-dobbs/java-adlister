@@ -6,6 +6,9 @@ CREATE USER IF NOT EXISTS 'adListerAdmin'@'localhost' IDENTIFIED BY 'codeup';
 
 GRANT ALL ON *.* TO 'adListerAdmin'@'localhost';
 
+DROP TABLE IF EXISTS ads;
+DROP TABLE IF EXISTS users;
+
 CREATE TABLE IF NOT EXISTS users
 (
     id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
